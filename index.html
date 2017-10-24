@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="app/css/style.css" type="text/css">
 </head>
 
-<body>
+<body ng-app="ecommerce">
 
     <nav class="transparent">
         <div class="nav-wrapper">
@@ -30,9 +30,14 @@
             </ul>
         </div>
     </nav>
+    
+    
     <main>
         <ng-view></ng-view>
     </main>
+    
+    
+    
     <footer class="page-footer light-blue darken-4">
         <div class="container">
             <div class="row">
@@ -46,7 +51,9 @@
                     <h5 class="white-text">Pagina do curso</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="http://www.newtonpaiva.br/">Newton Paiva</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/sistemas-de-informacao">Curso Sistemas de Informação</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/sistemas-de-informacao">
+                            Curso Sistemas de Informação
+                        </a></li>
                         <li><a class="grey-text text-lighten-3" href="http://tarley.eti.br">Tarley Lana</a></li>
                     </ul>
                 </div>
@@ -70,5 +77,8 @@
     <!-- Angular JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
+    
+    <script src="app/js/app.js"></script>
+    <script src="app/js/controllers.js"></script>
 </body>
 </html>
