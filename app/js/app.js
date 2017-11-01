@@ -5,6 +5,10 @@ angular.module('ecommerce', ['ngRoute', 'ecommerce.controllers'])
                 templateUrl: '/app/pages/bemvindo.html',
                 controller: 'BemVindoController'
             })
+            .when('/categoria', {
+                templateUrl: '/app/pages/categoria.html',
+                controller: 'CategoriaController'
+            })
             .otherwise({
                 redirectTo: '/'
             });
